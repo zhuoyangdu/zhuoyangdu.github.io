@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Zhuoyang Du</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://zhuoyangdu.github.io/"/>
+  <updated>2017-11-07T12:55:01.000Z</updated>
+  <id>https://zhuoyangdu.github.io/</id>
+  
+  <author>
+    <name>Zhuoyang Du</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>深度强化学习资源整理</title>
+    <link href="https://zhuoyangdu.github.io/2017/11/07/DRL-references-summarizing/"/>
+    <id>https://zhuoyangdu.github.io/2017/11/07/DRL-references-summarizing/</id>
+    <published>2017-11-07T12:29:11.000Z</published>
+    <updated>2017-11-07T12:55:01.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>公开课</strong></p><ul><li><p>David Silver UCL Course 强化学习公开课：<br>  <a href="http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html" target="_blank" rel="external">http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html</a><br>  读书笔记：<br>  <a href="https://chenrudan.github.io/blog/2016/06/06/reinforcementlearninglesssion1.html" target="_blank" rel="external">https://chenrudan.github.io/blog/2016/06/06/reinforcementlearninglesssion1.html</a></p></li><li><p>MIT: Deep Learning for Self-driving Cars:<br>  <a href="http://selfdrivingcars.mit.edu/" target="_blank" rel="external">http://selfdrivingcars.mit.edu/</a></p></li><li><p>BerkeleyX: CS188x_1: Artificial Intelligence:<br>  <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/20021a0a32d14a31b087db8d4bb582fd/" target="_blank" rel="external">https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/20021a0a32d14a31b087db8d4bb582fd/</a></p></li></ul><hr><p><strong>论文</strong></p><ul><li><p>ICML 2017 tutorial: Deep Reinforcement Learning, Decision Making, and Control<br>  <a href="https://sites.google.com/view/icml17deeprl" target="_blank" rel="external">https://sites.google.com/view/icml17deeprl</a></p></li><li><p>Navigating Intersections with Autonomous Vehicles using Deep Reinforcement Learning：<br>  原文：<a href="https://arxiv.org/abs/1705.01196" target="_blank" rel="external">https://arxiv.org/abs/1705.01196</a><br>  机器之心中文翻译：<a href="https://www.jiqizhixin.com/articles/2017-07-27-3" target="_blank" rel="external">https://www.jiqizhixin.com/articles/2017-07-27-3</a></p></li></ul><hr><p><strong>博客</strong></p><ul><li>Kintoki <a href="http://www.cnblogs.com/jinxulin/tag/Reinforcement%20learning/" target="_blank" rel="external">http://www.cnblogs.com/jinxulin/tag/Reinforcement%20learning/</a></li></ul><hr><p><strong>平台</strong></p><ul><li>TORCS仿真软件： <a href="http://torcs.sourceforge.net/" target="_blank" rel="external">http://torcs.sourceforge.net/</a></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;strong&gt;公开课&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;David Silver UCL Course 强化学习公开课：&lt;br&gt;  &lt;a href=&quot;http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.
+      
+    
+    </summary>
+    
+      <category term="Deep Learning" scheme="https://zhuoyangdu.github.io/categories/Deep-Learning/"/>
+    
+    
+  </entry>
+  
+</feed>
