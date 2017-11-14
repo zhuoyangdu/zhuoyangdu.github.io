@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://zhuoyangdu.github.io/2017/11/13/safe_multi_agent_reinforcement_learning/</loc>
+    
+    <lastmod>2017-11-13T12:55:55.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://zhuoyangdu.github.io/2017/11/07/DRL-references-summarizing/</loc>
     
     <lastmod>2017-11-07T12:55:01.000Z</lastmod>
