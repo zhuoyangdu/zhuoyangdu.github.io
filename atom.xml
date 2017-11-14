@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhuoyangdu.github.io/"/>
-  <updated>2017-11-14T08:55:22.000Z</updated>
+  <updated>2017-11-07T12:55:01.000Z</updated>
   <id>https://zhuoyangdu.github.io/</id>
   
   <author>
@@ -15,50 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>motion planning for autonomous vehicles</title>
-    <link href="https://zhuoyangdu.github.io/2017/11/14/motion-planning-for-autonomous-vehicles/"/>
-    <id>https://zhuoyangdu.github.io/2017/11/14/motion-planning-for-autonomous-vehicles/</id>
-    <published>2017-11-14T08:52:46.000Z</published>
-    <updated>2017-11-14T08:55:22.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>参考文献：</p><p>D. Gonzalez, J. Perez, V. Milanes, and F. Nashashibi, “A Review of Motion Planning Techniques for Automated Vehicles,” IEEE Transactions on Intelligent Transportation Systems, vol. 17, no. 4, pp. 1135–1145, Apr. 2016.</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;参考文献：&lt;/p&gt;
-&lt;p&gt;D. Gonzalez, J. Perez, V. Milanes, and F. Nashashibi, “A Review of Motion Planning Techniques for Automated Vehicles,” IEEE 
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="https://zhuoyangdu.github.io/2017/11/13/safe_multi_agent_reinforcement_learning/"/>
-    <id>https://zhuoyangdu.github.io/2017/11/13/safe_multi_agent_reinforcement_learning/</id>
-    <published>2017-11-13T12:55:55.000Z</published>
-    <updated>2017-11-13T12:55:55.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>Safe, Multi-Agent, Reinforcement Learning for Autonomous Driving</strong></p><p>[摘要]<br>自动驾驶是一个需要多智能体交互的过程，自动驾驶的车辆需要完成超车、让路、合并、左转、右转以及在非结构化的城市道路中行进等行为。由于可能遇到的场景是非常多的，手动罗列所有可能的状况将会导致过于简单的策略。另外，决策系统也应该平衡在其他行人/车辆的突发行为和正常交通流时的情况。</p><p>在这篇文章中，我们采用了深度强化学习来解决长期驾驶策略的问题。对于无人驾驶来说，与机器人任务相比，有两点主要的挑战。第一，保证安全性，这一点是机器学习很难保证的；第二，在机器人中经常用到的马尔科夫决策过程模型（MDP Model）在这种情况下是有问题的，因为其他多智能体在这种情形下会存在难以预料的行为。我们的工作主要有三点贡献，第一，我们展示了策略梯度迭代的方法，梯度估计的方差采样随机梯度上升可以最小化，不需要用到马尔可夫假设；第二，我们把这个问题分解成两个问题：Desires的策略（被学习）和复杂约束下的轨迹规划（不学习）。Desires的结果是保证驾驶的舒适度，困难约束保证驾驶的安全性；第三，我们介绍了一种分级时间抽象，我们称为“Option Graph”可以减少有效范围，从而减少梯度估计的方差。Option Graph和监督学习中的结构化预测起到了类似的作用，因此可以减少采样复杂度。</p><h1 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h1><p>驾驶策略指的是车辆采取长期的驾驶策略的能力，是完全自动驾驶的关键。感知过程是定义明确的，是指构建环境模型，包含所有的静态和动态障碍物，路径分割符的位置和类型，所有可驾驶的路径以及他们的语义学意义，以及车辆周围的交通标志和交通灯。但是驾驶策略Driving Policy的基本假设和功能分解却是较少为人理解的。为了有自动的能力，无人车在超车、让路、左转、右转等行为上需要有像人类一样的驾驶技能。由于可能遇到的场景是非常多的，手动罗列所有可能的状况将会导致过于简单的策略。另外，决策系统也应该平衡在其他行人/车辆的突发行为和正常交通流时的情况。</p><p>因为有以上的挑战，我们自然的想到用机器学习的方法解决问题。传统的用来规划策略的机器学习算法一般是在强化学习的框架中进行的([6,17,31,35]综述，[19]强化学习的综合回顾)。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;strong&gt;Safe, Multi-Agent, Reinforcement Learning for Autonomous Driving&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;[摘要]&lt;br&gt;自动驾驶是一个需要多智能体交互的过程，自动驾驶的车辆需要完成超车、让路、合并、左
-      
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title>深度强化学习资源整理</title>
