@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://zhuoyangdu.github.io/2018/01/20/install-mujoco/</loc>
+    
+    <lastmod>2018-01-19T16:05:48.912Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://zhuoyangdu.github.io/2017/11/07/DRL-references-summarizing/</loc>
     
     <lastmod>2017-11-07T12:55:01.000Z</lastmod>
