@@ -86,7 +86,7 @@
 <meta property="og:site_name" content="Zhuoyang Du">
 <meta property="og:description" content="为了做伯克利深度强化学习的课程作业安装了Tensorflow+MoJoCo+OpenAI gym，记录下安装过程和自己踩过的坑~ 安装Anaconda和tensorflow Anaconda的安装过程可直接参照官网，选择安装3.5版本的python，新建conda运行环境。 12# Python 3.5$ conda create -n tensorflow python=3.5 选择pip工具安">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-01-19T16:07:57.132Z">
+<meta property="og:updated_time" content="2018-01-19T16:15:03.984Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Ubuntu16.04 + Anaconda 中安装 Tensorflow + MuJoCo">
 <meta name="twitter:description" content="为了做伯克利深度强化学习的课程作业安装了Tensorflow+MoJoCo+OpenAI gym，记录下安装过程和自己踩过的坑~ 安装Anaconda和tensorflow Anaconda的安装过程可直接参照官网，选择安装3.5版本的python，新建conda运行环境。 12# Python 3.5$ conda create -n tensorflow python=3.5 选择pip工具安">
@@ -374,11 +374,23 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">(tensorflow)$ sudo apt-get install -y curl git libgl1-mesa-dev libgl1-mesa-glx libglew-dev libosmesa6-dev python3-pip python3-numpy python3-scipy net-tools unzip vim wget xpra</div></pre></td></tr></table></figure>
 <p>安装MuJoCo：</p>
 <ol>
-<li>在<a href="https://www.roboti.us/license.html" target="_blank" rel="external">MuJoCo Website</a>申请30天试用或学生免费证书，这里需要获取Computer id，下载对应系统(Linux)的脚本运行得到id（脚本需要设置运行权限 <figure class="highlight plain"><figcaption><span>777 getid_linux```），邮件中会收到license文件mjkey.txt。</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">2. 下载对应版本的mjpro，[https://www.roboti.us/index.html](https://www.roboti.us/index.html)，本文选择mjpro131 linux。</div><div class="line"></div><div class="line">3. 解压```mjpro131.zip```到```~/.mujoco/mjpro131```，并将license文件放在```~/.mujoco/```和```~/.mujoco/mjpro131/bin```目录下。</div><div class="line"></div><div class="line">4. 设置环境变量：</div></pre></td></tr></table></figure></li>
+<li><p>在<a href="https://www.roboti.us/license.html" target="_blank" rel="external">MuJoCo Website</a>申请30天试用或学生免费证书，这里需要获取Computer id，下载对应系统(Linux)的脚本运行得到id（脚本需要设置运行权限 <code>chmod 777 getid_linux</code>），邮件中会收到license文件mjkey.txt。</p>
+</li>
+<li><p>下载对应版本的mjpro，<a href="https://www.roboti.us/index.html" target="_blank" rel="external">https://www.roboti.us/index.html</a>，本文选择mjpro131 linux。</p>
+</li>
+<li><p>解压<code>mjpro131.zip</code>到<code>~/.mujoco/mjpro131</code>，并将license文件放在<code>~/.mujoco/</code>和<code>~/.mujoco/mjpro131/bin</code>目录下。</p>
+</li>
+<li><p>设置环境变量：</p>
+</li>
 </ol>
-<p>export LD_LIBRARY_PATH=/home/user/.mujoco/mjpro131/bin<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"> *测试是否安装成功：*</div><div class="line"> </div><div class="line"> 在```~/.mujoco/mjpro131/bin```下运行```./simulate ../model/humanoid.xml```，弹出仿真界面即为安装成功。</div><div class="line"> </div><div class="line"> </div><div class="line">安装mujoco-py:</div></pre></td></tr></table></figure></p>
-<p> (tensorflow)$ pip3 install mujoco-py==0.5.7<br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">---</div><div class="line"></div><div class="line">**安装OpenAI gym**</div></pre></td></tr></table></figure></p>
-<p> (tensorflow)$ git clone <a href="https://github.com/openai/gym.git" target="_blank" rel="external">https://github.com/openai/gym.git</a><br> (tensorflow)$ cd gym<br> (tensorflow)$ pip install -e .<br>```</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">export LD_LIBRARY_PATH=/home/user/.mujoco/mjpro131/bin</div></pre></td></tr></table></figure>
+<p> <em>测试是否安装成功：</em></p>
+<p> 在<code>~/.mujoco/mjpro131/bin</code>下运行<code>./simulate ../model/humanoid.xml</code>，弹出仿真界面即为安装成功。</p>
+<p>安装mujoco-py:</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">(tensorflow)$ pip3 install mujoco-py==0.5.7</div></pre></td></tr></table></figure>
+<hr>
+<p><strong>安装OpenAI gym</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">(tensorflow)$ git clone https://github.com/openai/gym.git</div><div class="line">(tensorflow)$ cd gym</div><div class="line">(tensorflow)$ pip install -e .</div></pre></td></tr></table></figure>
 <hr>
 <p>测试：通过运行<code>./homework/hw1/demo.bash</code>测试是否安装成功。</p>
 
