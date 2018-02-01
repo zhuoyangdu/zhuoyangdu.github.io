@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://zhuoyangdu.github.io/2018/02/01/build-deep-neural-network/</loc>
+    
+    <lastmod>2018-02-01T09:32:46.765Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://zhuoyangdu.github.io/2018/01/20/install-mujoco/</loc>
     
     <lastmod>2018-01-19T16:15:03.984Z</lastmod>

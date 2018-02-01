@@ -79,16 +79,22 @@
 
 
 
-<meta name="description" content="You only live once.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Zhuoyang Du">
-<meta property="og:url" content="https://zhuoyangdu.github.io/index.html">
+<meta name="description" content="源链接：https://www.coursera.org/learn/neural-networks-deep-learning/ Week4 assignment(part 1 of 2)  这周内容：实现所有建立深度神经网络需要的函数 下周内容：构建用于图像分类的深度神经网络   本次作业的要求是  用非线性单元（如：ReLU）来改进模型 建立深度神经网络 实现易于实用的神经网络  符号标记">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Building deep neural network - step by step">
+<meta property="og:url" content="https://zhuoyangdu.github.io/2018/02/01/build-deep-neural-network/index.html">
 <meta property="og:site_name" content="Zhuoyang Du">
-<meta property="og:description" content="You only live once.">
+<meta property="og:description" content="源链接：https://www.coursera.org/learn/neural-networks-deep-learning/ Week4 assignment(part 1 of 2)  这周内容：实现所有建立深度神经网络需要的函数 下周内容：构建用于图像分类的深度神经网络   本次作业的要求是  用非线性单元（如：ReLU）来改进模型 建立深度神经网络 实现易于实用的神经网络  符号标记">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="https://zhuoyangdu.github.io/2018/02/01/build-deep-neural-network/model_architecture.png">
+<meta property="og:image" content="https://zhuoyangdu.github.io/2018/02/01/build-deep-neural-network/backprop.png">
+<meta property="og:image" content="https://zhuoyangdu.github.io/2018/02/01/build-deep-neural-network/linearback.png">
+<meta property="og:image" content="https://zhuoyangdu.github.io/2018/02/01/build-deep-neural-network/mn_backward.png">
+<meta property="og:updated_time" content="2018-02-01T09:32:46.765Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Zhuoyang Du">
-<meta name="twitter:description" content="You only live once.">
+<meta name="twitter:title" content="Building deep neural network - step by step">
+<meta name="twitter:description" content="源链接：https://www.coursera.org/learn/neural-networks-deep-learning/ Week4 assignment(part 1 of 2)  这周内容：实现所有建立深度神经网络需要的函数 下周内容：构建用于图像分类的深度神经网络   本次作业的要求是  用非线性单元（如：ReLU）来改进模型 建立深度神经网络 实现易于实用的神经网络  符号标记">
+<meta name="twitter:image" content="https://zhuoyangdu.github.io/2018/02/01/build-deep-neural-network/model_architecture.png">
 
 
 
@@ -118,13 +124,13 @@
 
 
 
-  <link rel="canonical" href="https://zhuoyangdu.github.io/"/>
+  <link rel="canonical" href="https://zhuoyangdu.github.io/2018/02/01/build-deep-neural-network/"/>
 
 
 
 
 
-  <title>Zhuoyang Du</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  <title>Building deep neural network - step by step | Zhuoyang Du</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
   
 
 
@@ -143,8 +149,7 @@
     
   
 
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-right 
-  page-home">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-right page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -247,9 +252,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -279,9 +284,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/02/01/build-deep-neural-network/" itemprop="url">Building deep neural network - step by step</a></h1>
+          <h1 class="post-title" itemprop="name headline">Building deep neural network - step by step</h1>
         
 
         <div class="post-meta">
@@ -307,11 +310,26 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/02/01/build-deep-neural-network/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/2018/02/01/build-deep-neural-network/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
           
 
           
           
 
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i> 浏览
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>次
+            </span>
           
 
           
@@ -331,9 +349,7 @@
       
 
       
-        
-          
-            <p>源链接：<a href="https://www.coursera.org/learn/neural-networks-deep-learning/" target="_blank" rel="external">https://www.coursera.org/learn/neural-networks-deep-learning/</a> Week4 assignment(part 1 of 2)</p>
+        <p>源链接：<a href="https://www.coursera.org/learn/neural-networks-deep-learning/" target="_blank" rel="external">https://www.coursera.org/learn/neural-networks-deep-learning/</a> Week4 assignment(part 1 of 2)</p>
 <ul>
 <li>这周内容：实现所有建立深度神经网络需要的函数</li>
 <li>下周内容：构建用于图像分类的深度神经网络</li>
@@ -571,8 +587,6 @@
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">update_parameters</span><span class="params">(parameters, grads, learning_rate)</span>:</span></div><div class="line">    <span class="string">"""</span></div><div class="line"><span class="string">    Update parameters using gradient descent</span></div><div class="line"><span class="string">    </span></div><div class="line"><span class="string">    Arguments:</span></div><div class="line"><span class="string">    parameters -- python dictionary containing your parameters </span></div><div class="line"><span class="string">    grads -- python dictionary containing your gradients, output of L_model_backward</span></div><div class="line"><span class="string">    </span></div><div class="line"><span class="string">    Returns:</span></div><div class="line"><span class="string">    parameters -- python dictionary containing your updated parameters </span></div><div class="line"><span class="string">                  parameters["W" + str(l)] = ... </span></div><div class="line"><span class="string">                  parameters["b" + str(l)] = ...</span></div><div class="line"><span class="string">    """</span></div><div class="line">    </div><div class="line">    L = len(parameters) // <span class="number">2</span> <span class="comment"># number of layers in the neural network</span></div><div class="line"></div><div class="line">    <span class="comment"># Update rule for each parameter. Use a for loop.</span></div><div class="line">    <span class="comment">### START CODE HERE ### (≈ 3 lines of code)</span></div><div class="line">    <span class="keyword">for</span> l <span class="keyword">in</span> range(L):</div><div class="line">        parameters[<span class="string">"W"</span> + str(l + <span class="number">1</span>)] = parameters[<span class="string">"W"</span> + str(l + <span class="number">1</span>)] - learning_rate * grads[<span class="string">"dW"</span> + str(l + <span class="number">1</span>)]</div><div class="line">        parameters[<span class="string">"b"</span> + str(l + <span class="number">1</span>)] = parameters[<span class="string">"b"</span> + str(l + <span class="number">1</span>)] - learning_rate * grads[<span class="string">"db"</span> + str(l + <span class="number">1</span>)]</div><div class="line">    <span class="comment">### END CODE HERE ###</span></div><div class="line">        </div><div class="line">    <span class="keyword">return</span> parameters</div></pre></td></tr></table></figure>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">parameters, grads = update_parameters_test_case()</div><div class="line">parameters = update_parameters(parameters, grads, <span class="number">0.1</span>)</div><div class="line"></div><div class="line"><span class="keyword">print</span> (<span class="string">"W1 = "</span> + str(parameters[<span class="string">"W1"</span>]))</div><div class="line"><span class="keyword">print</span> (<span class="string">"b1 = "</span> + str(parameters[<span class="string">"b1"</span>]))</div><div class="line"><span class="keyword">print</span> (<span class="string">"W2 = "</span> + str(parameters[<span class="string">"W2"</span>]))</div><div class="line"><span class="keyword">print</span> (<span class="string">"b2 = "</span> + str(parameters[<span class="string">"b2"</span>]))</div><div class="line"><span class="keyword">print</span> (<span class="string">"W3 = "</span> + str(parameters[<span class="string">"W3"</span>]))</div><div class="line"><span class="keyword">print</span> (<span class="string">"b3 = "</span> + str(parameters[<span class="string">"b3"</span>]))</div></pre></td></tr></table></figure>
 
-          
-        
       
     </div>
     
@@ -589,190 +603,28 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://zhuoyangdu.github.io/2018/01/20/install-mujoco/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Zhuoyang Du">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Zhuoyang Du">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/01/20/install-mujoco/" itemprop="url">Ubuntu16.04 + Anaconda 中安装 Tensorflow + MuJoCo</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-01-20T00:03:10+08:00">
-                2018-01-20
-              </time>
+              <a href="/2018/01/20/install-mujoco/" rel="next" title="Ubuntu16.04 + Anaconda 中安装 Tensorflow + MuJoCo">
+                <i class="fa fa-chevron-left"></i> Ubuntu16.04 + Anaconda 中安装 Tensorflow + MuJoCo
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Deep-Learning/" itemprop="url" rel="index">
-                    <span itemprop="name">Deep Learning</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>为了做伯克利深度强化学习的课程作业安装了Tensorflow+MoJoCo+OpenAI gym，记录下安装过程和自己踩过的坑~</p>
-<p><strong>安装Anaconda和tensorflow</strong></p>
-<p>Anaconda的安装过程可直接参照官网，选择安装3.5版本的python，新建conda运行环境。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"># Python 3.5</div><div class="line">$ conda create -n tensorflow python=3.5</div></pre></td></tr></table></figure>
-<p>选择pip工具安装Tensorflow，首先需要激活conda环境：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ source activate tensorflow</div></pre></td></tr></table></figure>
-<p>根据要安装的不同版本的tensorflow设置环境变量（操作系统，Python版本，CPU版本还是CPU+GPU版本）。本文环境为：Ubuntu/Linux 64-bit, CPU-only, Python3.5。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"># Ubuntu/Linux 64-bit, CPU only, Python 3.5  </div><div class="line">(tensorflow)$ export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.10.0-cp35-cp35m-linux_x86_64.whl</div></pre></td></tr></table></figure>
-<p>根据Python版本进行安装：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"># Python 3  </div><div class="line">(tensorflow)$ pip3 install --ignore-installed --upgrade $TF_BINARY_URL</div></pre></td></tr></table></figure>
-<hr>
-<p><strong>安装MuJoCo</strong></p>
-<p>安装教程可参见：<a href="https://github.com/openai/mujoco-py" target="_blank" rel="external">https://github.com/openai/mujoco-py</a></p>
-<p>安装过程主要分两步，需要首先安装MuJoCo，然后安装mujoco-py，由于课程要求使用mujoco1.31，因此这里安装1.31的版本，注意mujoco-py的版本需要和MuJoCo版本对应上，如果安装mujoco1.31，则mujoco-py需要安装0.5.7的版本，否则会安装失败。</p>
-<p>Linux版本需要首先安装依赖：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">(tensorflow)$ sudo apt-get install -y curl git libgl1-mesa-dev libgl1-mesa-glx libglew-dev libosmesa6-dev python3-pip python3-numpy python3-scipy net-tools unzip vim wget xpra</div></pre></td></tr></table></figure>
-<p>安装MuJoCo：</p>
-<ol>
-<li><p>在<a href="https://www.roboti.us/license.html" target="_blank" rel="external">MuJoCo Website</a>申请30天试用或学生免费证书，这里需要获取Computer id，下载对应系统(Linux)的脚本运行得到id（脚本需要设置运行权限 <code>chmod 777 getid_linux</code>），邮件中会收到license文件mjkey.txt。</p>
-</li>
-<li><p>下载对应版本的mjpro，<a href="https://www.roboti.us/index.html" target="_blank" rel="external">https://www.roboti.us/index.html</a>，本文选择mjpro131 linux。</p>
-</li>
-<li><p>解压<code>mjpro131.zip</code>到<code>~/.mujoco/mjpro131</code>，并将license文件放在<code>~/.mujoco/</code>和<code>~/.mujoco/mjpro131/bin</code>目录下。</p>
-</li>
-<li><p>设置环境变量：</p>
-</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">export LD_LIBRARY_PATH=/home/user/.mujoco/mjpro131/bin</div></pre></td></tr></table></figure>
-<p> <em>测试是否安装成功：</em></p>
-<p> 在<code>~/.mujoco/mjpro131/bin</code>下运行<code>./simulate ../model/humanoid.xml</code>，弹出仿真界面即为安装成功。</p>
-<p>安装mujoco-py:</p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">(tensorflow)$ pip3 install mujoco-py==0.5.7</div></pre></td></tr></table></figure>
-<hr>
-<p><strong>安装OpenAI gym</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">(tensorflow)$ git clone https://github.com/openai/gym.git</div><div class="line">(tensorflow)$ cd gym</div><div class="line">(tensorflow)$ pip install -e .</div></pre></td></tr></table></figure>
-<hr>
-<p>测试：通过运行<code>./homework/hw1/demo.bash</code>测试是否安装成功。</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -782,178 +634,11 @@
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://zhuoyangdu.github.io/2017/11/07/DRL-references-summarizing/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Zhuoyang Du">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Zhuoyang Du">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/11/07/DRL-references-summarizing/" itemprop="url">深度强化学习资源整理</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-11-07T20:29:11+08:00">
-                2017-11-07
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Deep-Learning/" itemprop="url" rel="index">
-                    <span itemprop="name">Deep Learning</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><strong>公开课</strong></p>
-<ul>
-<li><p>David Silver UCL Course 强化学习公开课：<br>  <a href="http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html" target="_blank" rel="external">http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html</a><br>  读书笔记：<br>  <a href="https://chenrudan.github.io/blog/2016/06/06/reinforcementlearninglesssion1.html" target="_blank" rel="external">https://chenrudan.github.io/blog/2016/06/06/reinforcementlearninglesssion1.html</a></p>
-</li>
-<li><p>MIT: Deep Learning for Self-driving Cars:<br>  <a href="http://selfdrivingcars.mit.edu/" target="_blank" rel="external">http://selfdrivingcars.mit.edu/</a></p>
-</li>
-<li><p>BerkeleyX: CS188x_1: Artificial Intelligence:<br>  <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/20021a0a32d14a31b087db8d4bb582fd/" target="_blank" rel="external">https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/20021a0a32d14a31b087db8d4bb582fd/</a></p>
-</li>
-</ul>
-<hr>
-<p><strong>论文</strong></p>
-<ul>
-<li><p>ICML 2017 tutorial: Deep Reinforcement Learning, Decision Making, and Control<br>  <a href="https://sites.google.com/view/icml17deeprl" target="_blank" rel="external">https://sites.google.com/view/icml17deeprl</a></p>
-</li>
-<li><p>Navigating Intersections with Autonomous Vehicles using Deep Reinforcement Learning：<br>  原文：<a href="https://arxiv.org/abs/1705.01196" target="_blank" rel="external">https://arxiv.org/abs/1705.01196</a><br>  机器之心中文翻译：<a href="https://www.jiqizhixin.com/articles/2017-07-27-3" target="_blank" rel="external">https://www.jiqizhixin.com/articles/2017-07-27-3</a></p>
-</li>
-</ul>
-<hr>
-<p><strong>博客</strong></p>
-<ul>
-<li>Kintoki <a href="http://www.cnblogs.com/jinxulin/tag/Reinforcement%20learning/" target="_blank" rel="external">http://www.cnblogs.com/jinxulin/tag/Reinforcement%20learning/</a></li>
-</ul>
-<hr>
-<p><strong>平台</strong></p>
-<ul>
-<li>TORCS仿真软件： <a href="http://torcs.sourceforge.net/" target="_blank" rel="external">http://torcs.sourceforge.net/</a></li>
-</ul>
-
-          
-        
+    <div class="post-spread">
       
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
@@ -961,6 +646,17 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      
+        <div id="gitment-container"></div>
+      
+    </div>
+
+  
+
+
 
         </div>
         
@@ -981,8 +677,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -1060,6 +765,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Packages"><span class="nav-number">1.</span> <span class="nav-text">Packages</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Outline-of-the-Assignment"><span class="nav-number">2.</span> <span class="nav-text">Outline of the Assignment</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Initialization"><span class="nav-number">3.</span> <span class="nav-text">Initialization</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-lay-Neural-Network"><span class="nav-number">3.1.</span> <span class="nav-text">2-lay Neural Network</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#L-layer-Neural-Network"><span class="nav-number">3.2.</span> <span class="nav-text">L-layer Neural Network</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Forward-propagation-module"><span class="nav-number">4.</span> <span class="nav-text">Forward propagation module</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Linear-Forward"><span class="nav-number">4.1.</span> <span class="nav-text">Linear Forward</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Linear-Activation-Forward"><span class="nav-number">4.2.</span> <span class="nav-text">Linear-Activation Forward</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#L-layer-model"><span class="nav-number">4.3.</span> <span class="nav-text">L-layer model</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Cost-function"><span class="nav-number">5.</span> <span class="nav-text">Cost function</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Backward-propagation-module"><span class="nav-number">6.</span> <span class="nav-text">Backward propagation module</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Linear-backward"><span class="nav-number">6.1.</span> <span class="nav-text">Linear backward</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Linear-Activation-backward"><span class="nav-number">6.2.</span> <span class="nav-text">Linear-Activation backward</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#L-Model-backward"><span class="nav-number">6.3.</span> <span class="nav-text">L-Model backward</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Update-parameters"><span class="nav-number">7.</span> <span class="nav-text">Update parameters</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1213,6 +934,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
 
   
 
@@ -1259,6 +984,30 @@
 
     
 
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+            id: window.location.pathname, 
+            owner: 'zhuoyangdu',
+            repo: 'gitment',
+            
+            lang: "zh-Hans" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: 'fcd109f9f5cd2bd065c09ac8c5ad4e731777ee94',
+            
+                client_id: '511a3f8ba7f8d11e72fa'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      renderGitment();
+      
+      </script>
     
 
 
